@@ -5,60 +5,82 @@
 	  <title>Student Name's Portfolio</title>
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,700,900|Roboto:300,400,500,700,900" rel="stylesheet">
 	</head>
 	<body>
 		<div class="main-nav">
+		<h1 class="name">Student Name</h1>
 			<ul class="nav">
-					<li class="name">Student Name</li>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="#porftolio">Portfolio</a></li>
+					<li><a href="#skills">Skills</a></li>
 					<li><a href="#contact">Contact</a></li>
 			</ul>
 		</div>
 		<header>
-			<img src="images/responsive-layout-profile.png" alt="Profile photo of Student Name" class="profile-image">
-			<p>Hi! I'm a front-end developer who loves responsive desing and css. I recently finished a degree in front-end web development at Treehouse and Iam excited to put all of my skills to use!</p>
+			<img src="images/responsive-layout-profile.png" alt="Profile photo of Student Name" class="profile">
+			<p>Hi! I'm a front-end developer who loves responsive desing and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all of my skills to use!</p>
 		</header>
 		<main>
-			<div "portfolio">
-				<h1 id="portfolio">Portfolio</h1>
-				<img src="images/portfolio-1.png" alt="image of marketing page" class="portfolio-pic">
-				<h2>Marketing Page</h2>
-				<p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
-
-				<img src="images/portfolio-2.png" alt="image of marketing page" class="portfolio-pic">
-				<h2>Search Page</h2>
-				<p>TThis project searches through a specific database to find information that the user is trying to look up.</p>
-
-				<img src="images/portfolio-3.png" alt="image of marketing page" class="portfolio-pic">
-				<h2>Travel App</h2>
-				<p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-
-				<img src="images/portfolio-4.png" alt="image of marketing page" class="portfolio-pic">
-				<h2>Map of Favorite Spots</h2>
-				<p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-
-				<img src="images/portfolio-5.png" alt="image of marketing page" class="portfolio-pic">
-				<h2>Photo Gallery</h2>
-				<p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-
-				<img src="images/portfolio-6.png" alt="image of marketing page" class="portfolio-pic">
-				<h2>Calculator</h2>
-				<p>TSomeone can enter in the numbers they want, and press the big blue button and get the result.</p>
+			<div class="portfolio">
+				<h2 id="portfolio">Portfolio</h2>
+				<div class="marketing">
+					<img src="images/portfolio-1.png" alt="image of marketing page">
+					<h3>Marketing Page</h3>
+					<p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+				</div>
+				<div class="portfolio-item">
+					<img src="images/portfolio-2.png" alt="image of search page">
+					<h3>Search Page</h3>
+					<p>This project searches through a specific database to find information that the user is trying to look up.</p>
+				</div>
+				<div class="portfolio-item">
+					<img src="images/portfolio-3.png" alt="image of travel app">
+					<h3>Travel App</h3>
+					<p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+				</div>
+				<div class="portfolio-item">
+					<img src="images/portfolio-4.png" alt="image of map of favorite spots">
+					<h3>Map of Favorite Spots</h3>
+					<p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+				</div>
+				<div class="portfolio-item">
+					<img src="images/portfolio-5.png" alt="image of photo gallery">
+					<h3>Photo Gallery</h3>
+					<p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+				</div>
+				<div class="portfolio-item">
+					<img src="images/portfolio-6.png" alt="image of calculator app">
+					<h3>Calculator</h3>
+					<p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+				</div>
+			</div>
+			<div class="skills">
+				<h2 id="skills">Skills</h2>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Javascript</li>
+						<li>Sass</li>
+						<li>Wordpress</li>
+						<li>Photoshop</li>
+					</ul>
 			</div>
 			<div class="contact">
-				<h1 id="contact">Contact</h1>
+				<h2 id="contact">Contact</h2>
 				<p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you.</p>
 				<p>Phone <b>+1 (111) 555-1234</b></p>
 				<p>Email <b>email@yoursite.com</b></p>
 			</div>
 		</main>
-		<footer>
-			<ul>
-				<li>Student Name></li>
-				<li><a href="index.html">Home</a></li>
+		<footer class="footer">
+			
+			<ul class="footer-nav">				
+				<li class="footer-name" style="float:left">&copy Student Name</li>
+				<li><a href="#">Back to Top<a/></li>
+<!-- 		<li><a href="index.html">Home</a></li>
 				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#contact">Contact</a></li>			
+				<li><a href="#contact">Contact</a></li>	 -->		
 			</ul>
 		</footer>
 	</body>
