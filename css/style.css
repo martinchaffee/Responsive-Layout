@@ -1,6 +1,7 @@
 /* Global Layout Set-up */
 * { 
   box-sizing: border-box;
+  border: 1px solid blue;
 }
 
 /*Link Styles*/
@@ -45,12 +46,14 @@ h3 {
 
 ul {
 	list-style-type: none;
-	list-style-position: inside;
 	text-align: center;
 	padding: 0;
 	width: 100%;
 }
 
+li {
+	width: ;
+}
 p {
 	font-size: 120%;
 }
@@ -65,11 +68,8 @@ p {
 .nav {
 	margin: 0 auto;
 	width:95%;
-}
-
-.name {
-	font-weight: bold;
-	margin: 1.3em auto;
+	display: flex;
+	flex-direction: column;
 }
 
 .nav a {
@@ -124,7 +124,7 @@ li a:visited {
 }
 .skills li {
 	display: inline-block;
-	background: #343434;  /*#343434=dark grey*/
+	background: #343434;
 	color: #ffffff;
 	padding: .5em .75em;
 	margin: 2px;
@@ -190,27 +190,26 @@ footer {
 
 	.banner {
 		padding-bottom: 4em;
-	}
-
-	
-/*	.nav li{
-		display: inline-block;
-		background: none;
-	}*/
+	} 
 
 	.nav {
 		display: flex;
-		margin: 0 auto;
 		align-items: center;
+		flex-direction: row;
+		justify-content: center;
 	}
 
 	.nav li {
 		flex-direction: row;
+		margin-right: 1em;
+		margin-left: 1em;
 	}
 
 	.nav a{
 		background: none;
 		font-size: 100%;
+		padding-left: 1em;
+		padding-right: 1em;
 	}
 
 	.banner p{
@@ -260,37 +259,49 @@ footer {
 }
 /*Style for larger screens - 1025px*/
 @media(min-width: 1025px) {
-	
+
 	.main-header {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		/*justify-content: space-around;
-  		margin: 0 auto;
-  		padding: 0;	*/
-	}
-	.main-header ul {
-		display: flex;
-		margin: 0 auto;
-
-	}
-
-	.main-header li {
-		flex-direction: row;
-	}
-	.main-header h1 {
-	/*	margin-right: auto;*/
-	}
-
-	.banner p{
 		padding-left: 2em;
+/*		padding-right: 2em;*/
+		width: 95%;
+	}
+
+	.name {
+		width: 8em;
+	}
+
+	.nav {
+		display: flex;
+		justify-content: flex-end;
+	}
+	.nav li {
+		margin-right: 0;
+	}
+
+	.nav a{
+		background: none;
+		font-size: 100%;
+		padding-left: 1em;
+	}
+
+	main {
+		width: 95%;
+	}
+
+	.banner {
+		width: 95%;
+	}
+	.banner p{
 		font-size: 150%;
 	}
+
 	.portfolio li {
 		width: 31%;
 		margin: 1%;
 		float: left;
-
 	}
 
 	.portfolio p {
@@ -304,6 +315,7 @@ footer {
 
 	footer {
 		margin: 1em auto;
+		width: 95%;
 	}
 }
 
