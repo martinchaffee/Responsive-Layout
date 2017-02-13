@@ -2,7 +2,7 @@
 * { 
   box-sizing: border-box;
 }
-  
+
 /*Link Styles*/
 a {
 	text-decoration: none;
@@ -16,23 +16,20 @@ body {
  	font-size: 100%;
 	line-height: 1.5;
 	font-family: 'Roboto', sans-serif;
-	color: #222222; /*#222222=black*/
-	background-color: #f4f4f4; /*#f4f4f4=light grey*/
+	color: #222222;
+	background-color: #f4f4f4;
 }
 
-header {
-		background-color: #f4f4f4;
-		padding: 2em 1em;
-		margin: 1em auto;
+.banner {
+	background-color: #f4f4f4;
+	padding: 2em 1em;
+	margin: 1em auto;
 }
+
 main {
 	margin: 0 auto;
 	width: 100%;
 	background-color: #ffffff;
-}
-
-p {
-
 }
 
 h2 {
@@ -47,42 +44,35 @@ h3 {
 }
 
 ul {
-		font-family: 'Lato', sans-serif;
-		list-style-type: none;
-		list-style-position: inside;
-		text-align: center;
-		padding: 0;
-		width: 100%;
+	list-style-type: none;
+	list-style-position: inside;
+	text-align: center;
+	padding: 0;
+	width: 100%;
 }
 
-footer {
-	margin: 1em 1em;
-	padding: 1em;
-	border-top: 2px solid #cccccc;
-
-
+p {
+	font-size: 120%;
 }
-.main-nav{
-		background-color: #f4f4f4;
 
+.main-header {
+	background-color: #f4f4f4;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .nav {
 	margin: 0 auto;
+	width:95%;
 }
 
 .name {
-	font-size: 2em;
 	font-weight: bold;
 	margin: 1.3em auto;
 }
 
-.main-nav li{
-	margin-left: 1em;
-	margin-right: 1em;
-}
-
-.nav a{
+.nav a {
 	font-size: 120%;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -94,13 +84,10 @@ footer {
 	text-align: center;
 }
 
-.nav a:hover {
-
-}
-
 li a:visited {
 	color:inherit;
 }
+
 .profile {
 	width: 80%;
 	margin-bottom: 20px;
@@ -109,15 +96,17 @@ li a:visited {
 }
 
 .portfolio {
-	background-color: #ffffff; /*#ffffff=white*/
+	background-color: #ffffff;
 	width: 100%;
-	padding-left: 1em;
-	padding-right: 1em;
-	padding-bottom: 3em;
+	}
+
+.portfolio li {
+	width: 98%;
+	margin: 2%;
 	}
 
 .portfolio img {
-	width: 100%;
+	width: 95%;
 	padding-top: 1em;
 	padding-bottom: 1em;
 	margin: 0 auto;
@@ -143,6 +132,7 @@ li a:visited {
 }
 
 .contact {
+	font-size: 110%;
 	background-color: #f4f4f4;
 	width: 100%;
 	padding-bottom: 3em;
@@ -150,8 +140,16 @@ li a:visited {
 	padding-right: 1em;
 }
 
-.footer h1 {
-	font-size: 1em;
+.contact p {
+	font-family: 'Lato', sans-serif;
+	width: 80%;
+	margin: 2em auto;
+}
+
+footer {
+	margin: 1em 1em;
+	padding: 2em 1em 1em;
+	border-top: 2px solid #cccccc;
 }
 
 .footer-nav ul{
@@ -163,26 +161,151 @@ li a:visited {
 }
 
 .footer-nav {
-	display: inline-block;
+	display: flex;
+	justify-content: space-around;
+  	margin: 0 auto;
+  	padding: 0;	
 }
-.footer-nav a{
+
+.footer-nav a {
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: .8em;
 	margin: 0px;
 }
 
-.footer-name {
-	float: left;
-	margin: 0 auto;
-/*	vertical-align: top;
-*/	display: inline;
+#footer-name {
+    display: block;
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 100%;
 }
 
-/*Style for larger screens - 720px*/
+.nav-hidden {
+	display: none;
+}
 
+/*Style for tablet screens - 768px*/
+@media(min-width: 768px){
+
+	.banner {
+		padding-bottom: 4em;
+	}
+
+	
+/*	.nav li{
+		display: inline-block;
+		background: none;
+	}*/
+
+	.nav {
+		display: flex;
+		margin: 0 auto;
+		align-items: center;
+	}
+
+	.nav li {
+		flex-direction: row;
+	}
+
+	.nav a{
+		background: none;
+		font-size: 100%;
+	}
+
+	.banner p{
+		width: 55%;
+		float: left;
+		text-align: left;
+		margin: auto;
+	
+	}
+	.profile {
+		float: right;
+		width: 40%;
+	}
+
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	.portfolio li {
+		width: 48%;
+		margin: 1%;
+		float: left;
+
+	}
+
+	.portfolio p {
+		width: 80%;
+		margin: auto;
+	}
+
+	footer {
+		margin-bottom: 5em;
+	}
+	.nav-hidden {
+		display: inline-block;
+	}
+
+	#back-to-top {
+		display: none;
+	}
+
+	.nav-hidden a {
+		margin-right: 3em;
+	}
+}
 /*Style for larger screens - 1025px*/
+@media(min-width: 1025px) {
+	
+	.main-header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		/*justify-content: space-around;
+  		margin: 0 auto;
+  		padding: 0;	*/
+	}
+	.main-header ul {
+		display: flex;
+		margin: 0 auto;
 
+	}
+
+	.main-header li {
+		flex-direction: row;
+	}
+	.main-header h1 {
+	/*	margin-right: auto;*/
+	}
+
+	.banner p{
+		padding-left: 2em;
+		font-size: 150%;
+	}
+	.portfolio li {
+		width: 31%;
+		margin: 1%;
+		float: left;
+
+	}
+
+	.portfolio p {
+		width: 85%;
+		margin: auto;
+	}
+
+	h2 {
+		padding-top: 4em;
+	}
+
+	footer {
+		margin: 1em auto;
+	}
+}
 
 
 
