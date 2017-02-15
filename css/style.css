@@ -1,7 +1,6 @@
 /* Global Layout Set-up */
 * { 
   box-sizing: border-box;
-  border: 1px solid blue;
 }
 
 /*Link Styles*/
@@ -48,12 +47,8 @@ ul {
 	list-style-type: none;
 	text-align: center;
 	padding: 0;
-	width: 100%;
 }
 
-li {
-	width: ;
-}
 p {
 	font-size: 120%;
 }
@@ -81,7 +76,6 @@ p {
 	margin: .15em;
 	display: inline-block;
 	width: 100%;
-	text-align: center;
 }
 
 li a:visited {
@@ -264,8 +258,6 @@ footer {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		padding-left: 2em;
-/*		padding-right: 2em;*/
 		width: 95%;
 	}
 
