@@ -27,8 +27,8 @@ body {
 	color: #03547b;
 	font-family: 'Roboto', sans-serif;
 	font-size: 100%;
-	margin: 0 auto;
 	line-height: 1.5;
+	margin: 0 auto;
 	text-align: center;
 	width: 100%;
 }
@@ -60,13 +60,12 @@ p {
 }
 
 .main-nav a {
+	background-color: #ffffff;
 	display: inline-block;
 	font-weight: bold;
+	margin: .33em auto;
 	padding: .5em 0em;
 	text-transform: uppercase;
-	width: 100%;
-	background-color: #ffffff;
-	margin: .33em auto;
 	width: 95%;
 }
 
@@ -78,9 +77,9 @@ p {
 /*---------Banner-----------*/
 .banner {
 	display: block;
-	width: 95%;
 	margin: 2em auto;
 	padding: 1em 0;
+	width: 95%;
 }
 
 .banner img {
@@ -103,8 +102,9 @@ p {
 }
 .portfolio-items {
 	padding: 0;
-	width: 95%;
 	margin: auto;
+	width: 95%;
+
 }
 
 .portfolio-items li {
@@ -113,13 +113,13 @@ p {
 	margin-top: 2em;
 }
 .portfolio-items img{
-	width: 100%;
 	margin: auto;
+	width: 100%;
 }
 
 .portfolio p {
-	width: 95%;
 	padding: 1em 0;
+	width: 95%;
 }
 
 /*--------Skills & Contact-----------*/
@@ -139,12 +139,12 @@ p {
 }
 
 .skills li {
-	font-family: 'Loto', sans-serif;
 	background-color: #0795D9;
 	border-radius: 1em;
 	color: #ffffff;
-	padding: .5em .75em;
+	font-family: 'Loto', sans-serif;
 	margin: .25em;
+	padding: .5em .75em;
 }
 
 .contact p {
@@ -157,16 +157,16 @@ footer {
 	border-top: 1px solid #4daedc;
 	display: flex;
 	justify-content: space-between;
-	width: 95%;
 	margin: auto;
+	width: 95%;
 }
 
 .footer-nav {
+	align-items: center;
 	display: flex;
 	flex-direction: row-reverse;
-	text-transform: uppercase;
 	justify-content: flex-end;
-	align-items: center;
+	text-transform: uppercase;
 }
 
 .footer-nav li {
@@ -181,7 +181,6 @@ footer {
 
 .footer-nav a:hover {
 	background-color: #ffd7ae;
-
 	transition: .5s;
 }
 
@@ -205,24 +204,23 @@ footer {
 		width: 60%;
 	}
 
-header h1 {
-	padding-top: 1em;
-}
+	header h1 {
+		padding-top: 1em;
+	}
 
 	.main-nav a {
+		background-color: inherit;
 		border-radius: 1em;
 		font-size: 110%;
-		padding: 0;
-		padding: .25em;
-		background-color: inherit;
 		margin: 1em;
+		padding: .25em;
 		width: auto;
 
 	}
 
 	.main-nav a:hover {
-	background-color: #ffd7ae;
-	transition: .5s;
+		background-color: #ffd7ae;
+		transition: .5s;
 }
 
 /*--------Banner----------------*/
@@ -322,7 +320,6 @@ header h1 {
 		flex-direction: row;
 		align-content: flex-end;
 		justify-content: flex-end;
-		/*width: 40%;*/
 		margin: 0;
 	}
 
