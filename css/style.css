@@ -300,8 +300,8 @@ footer {
 }
 
 
-/*--------------Style for large (computer) screens - 1025px-------------------*/
-@media(min-width: 1025px){
+/*--------------Style for large (computer) screens - 1024px-------------------*/
+@media(min-width: 1024px){
 
 /*--------Main-Header-----------*/
 	.header {
